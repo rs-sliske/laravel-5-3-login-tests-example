@@ -42,7 +42,7 @@ class LoginTest extends TestCase
     		//check we were redirected back to login page
     		->seePageIs('/login');
 
-		// check we are logged in
+		// check we are not logged in
     	$this->assertFalse(auth()->check());
     }
 
